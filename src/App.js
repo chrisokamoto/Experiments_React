@@ -10,16 +10,16 @@ class App extends Component {
     super(props);
     this.state = {
       dishes: DISHES
-    }
+      }
   }
 
   render() {
     return (
       <div className="App">
         <Navbar dark color="primary">
-            <div classname="container">
-                <NavbarBrand href="/">Ristorant Con Fusion</NavbarBrand>
-            </div>
+          <div className="container">
+            <NavbarBrand href="/">Ristorant Con Fusion</NavbarBrand>
+          </div>
         </Navbar>
         <Menu dishes={this.state.dishes} />
       </div>
